@@ -48,6 +48,17 @@ module Sunspot
       # 
       def total
         @doclist['numFound']
+      end
+      
+      #
+      # The max score of documents matching the query for this group
+      #
+      # ==== Returns
+      #
+      # Float:: max score of documents
+      # 
+      def max_score
+        @doclist['maxScore']
       end      
     end
   end
