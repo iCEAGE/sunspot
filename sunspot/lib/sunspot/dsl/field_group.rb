@@ -12,6 +12,14 @@ module Sunspot
       def limit(num)
         @group.limit = num
       end
+      
+      #
+      # If true, includes the number of groups that have matched the query.
+      # Default is true
+      #
+      def ngroups(show_groups_number)
+        @group.ngroups = show_groups_number
+      end
 
       #
       # If set, facet counts are based on the most relevant document of
